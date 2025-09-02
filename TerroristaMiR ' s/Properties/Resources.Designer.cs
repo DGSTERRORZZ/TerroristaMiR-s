@@ -63,6 +63,56 @@ namespace TerroristaMiR___s.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12121212112 {
+            get {
+                object obj = ResourceManager.GetObject("12121212112", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _313131313131 {
+            get {
+                object obj = ResourceManager.GetObject("313131313131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _41414414141 {
+            get {
+                object obj = ResourceManager.GetObject("41414414141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_19_8_2025_95248_www_canva_com {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela_19-8-2025_95248_www.canva.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_19_8_2025_95248_www_canva1 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela_19-8-2025_95248_www.canva1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_5_8_2025_10023_wallpaperaccess_com {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela_5-8-2025_10023_wallpaperaccess.com", resourceCulture);

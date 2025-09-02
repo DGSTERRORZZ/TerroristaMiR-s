@@ -16,7 +16,7 @@ namespace TerroristaMiR___s
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBtt());
+            Application.Run(new FrmMat());
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TerroristaMiR___s
 {
-    public partial class FrmBtt : Form
+    public partial class FrmMat : Form
     {
-        public FrmBtt()
+        public FrmMat()
         {
             InitializeComponent();
         }
@@ -44,5 +44,29 @@ namespace TerroristaMiR___s
             frmLogin.ShowDialog();
             this.Visible = true;
         }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+
+            DialogResult resultado = MessageBox.Show(
+                "Tem certeza que deseja sair?",
+                "Confirmação",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void LblMat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
+
+
