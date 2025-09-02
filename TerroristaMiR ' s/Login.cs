@@ -35,7 +35,7 @@ namespace TerroristaMiR___s
             string connectionString = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
 
 
-            string nome = TxbNom.Text.Trim();
+            string nome = TxbPro.Text.Trim();
             string idadeText = TxbIda.Text.Trim();
             string prontuario = TxbPro.Text.Trim();
             string email = TxbEml.Text.Trim();
@@ -90,6 +90,11 @@ namespace TerroristaMiR___s
         {
            
            
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

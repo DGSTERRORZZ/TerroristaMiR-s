@@ -37,12 +37,18 @@
             // 
             this.BtnEnt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnEnt.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEnt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnEnt.FlatAppearance.BorderSize = 0;
+            this.BtnEnt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnEnt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEnt.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEnt.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.BtnEnt.Location = new System.Drawing.Point(189, 12);
+            this.BtnEnt.Image = global::TerroristaMiR___s.Properties.Resources._414144141411;
+            this.BtnEnt.Location = new System.Drawing.Point(585, 405);
+            this.BtnEnt.Margin = new System.Windows.Forms.Padding(0);
             this.BtnEnt.Name = "BtnEnt";
-            this.BtnEnt.Size = new System.Drawing.Size(394, 69);
+            this.BtnEnt.Size = new System.Drawing.Size(349, 68);
             this.BtnEnt.TabIndex = 0;
             this.BtnEnt.UseVisualStyleBackColor = false;
             this.BtnEnt.Click += new System.EventHandler(this.button1_Click_1);
@@ -56,7 +62,7 @@
             this.LblMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMat.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.LblMat.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.LblMat.Location = new System.Drawing.Point(688, -13);
+            this.LblMat.Location = new System.Drawing.Point(1095, -13);
             this.LblMat.Name = "LblMat";
             this.LblMat.Size = new System.Drawing.Size(23, 31);
             this.LblMat.TabIndex = 1;
@@ -67,10 +73,14 @@
             // 
             this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSair.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSair.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSair.Location = new System.Drawing.Point(644, 383);
+            this.BtnSair.Location = new System.Drawing.Point(1283, 733);
             this.BtnSair.Name = "BtnSair";
-            this.BtnSair.Size = new System.Drawing.Size(102, 34);
+            this.BtnSair.Size = new System.Drawing.Size(261, 116);
             this.BtnSair.TabIndex = 4;
             this.BtnSair.UseVisualStyleBackColor = false;
             this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
@@ -80,9 +90,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources._41414414141;
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources._4444444444444444;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(771, 450);
+            this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.LblMat);
             this.Controls.Add(this.BtnEnt);

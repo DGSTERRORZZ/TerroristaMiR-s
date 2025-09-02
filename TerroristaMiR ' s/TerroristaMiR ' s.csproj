@@ -114,5 +114,119 @@
   <ItemGroup>
     <None Include="Resources\41414414141.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-square-1000-x-1000-wallpaper-012q36x57zmvf259.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\414144141411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 111449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 111230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1112301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1112302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 105638.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9199191919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91991919191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7070700707.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800808.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008081.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008083.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008084.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008085.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008086.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008087.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61661266262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8008088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70707007071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91991919192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1112303.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1056381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3131313131311.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\414144141412.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-square-1000-x-1000-wallpaper-012q36x57zmvf2591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\616612662621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111111111111111111111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2222222222222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\333333333333333333333333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4444444444444444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 115409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1154091.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1154092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1154093.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-02 1154094.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TETEU.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
