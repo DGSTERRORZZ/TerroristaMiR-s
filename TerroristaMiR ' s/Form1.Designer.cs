@@ -45,7 +45,7 @@
             this.BtnEnt.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEnt.ForeColor = System.Drawing.SystemColors.InfoText;
             this.BtnEnt.Image = global::TerroristaMiR___s.Properties.Resources._414144141411;
-            this.BtnEnt.Location = new System.Drawing.Point(585, 405);
+            this.BtnEnt.Location = new System.Drawing.Point(586, 400);
             this.BtnEnt.Margin = new System.Windows.Forms.Padding(0);
             this.BtnEnt.Name = "BtnEnt";
             this.BtnEnt.Size = new System.Drawing.Size(349, 68);
@@ -78,7 +78,7 @@
             this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSair.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSair.Location = new System.Drawing.Point(1283, 733);
+            this.BtnSair.Location = new System.Drawing.Point(1272, 733);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(261, 116);
             this.BtnSair.TabIndex = 4;
@@ -90,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources._4444444444444444;
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources._8888888888888888881;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.BtnSair);

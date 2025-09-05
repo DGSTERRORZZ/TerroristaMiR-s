@@ -35,7 +35,7 @@ namespace TerroristaMiR___s
             string connectionString = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
 
 
-            string nome = TxbPro.Text.Trim();
+            string nome = TxbNom.Text.Trim();
             string idadeText = TxbIda.Text.Trim();
             string prontuario = TxbPro.Text.Trim();
             string email = TxbEml.Text.Trim();
@@ -84,13 +84,6 @@ namespace TerroristaMiR___s
             {
                 MessageBox.Show("Erro ao cadastrar usuário: " + ex.Message);
             }
-        }
-
-        private void cmbgenero_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-           
-
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)

@@ -19,8 +19,21 @@ namespace TerroristaMiR___s
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.TopMost = true;
         }
+            protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                // Ignora ESC
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+      
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -37,16 +50,20 @@ namespace TerroristaMiR___s
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)
         {
-           FrmLogin frmLogin = new FrmLogin();
-            this.Visible = false;
-            frmLogin.ShowDialog();
-            this.Visible = true;
+            FrmLogin frmLogin = new FrmLogin();
+
+            frmLogin.FormClosed += (s, args) => this.Show(); // Mostra a tela principal de novo
+            this.Hide(); // Esconde a tela principal
+
+            frmLogin.Show();
         }
+
 
         private void BtnSair_Click(object sender, EventArgs e)
         {
+     
 
             DialogResult resultado = MessageBox.Show(
                 "Tem certeza que deseja sair?",
@@ -60,6 +77,7 @@ namespace TerroristaMiR___s
                 Application.Exit();
             }
         }
+
 
         private void LblMat_Click(object sender, EventArgs e)
         {

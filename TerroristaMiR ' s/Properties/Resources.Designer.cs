@@ -163,6 +163,26 @@ namespace TerroristaMiR___s.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4444444444444444444 {
+            get {
+                object obj = ResourceManager.GetObject("4444444444444444444", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _55555555555 {
+            get {
+                object obj = ResourceManager.GetObject("55555555555", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _61661266262 {
             get {
                 object obj = ResourceManager.GetObject("61661266262", resourceCulture);
@@ -183,6 +203,16 @@ namespace TerroristaMiR___s.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6666666666666666 {
+            get {
+                object obj = ResourceManager.GetObject("6666666666666666", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7070700707 {
             get {
                 object obj = ResourceManager.GetObject("7070700707", resourceCulture);
@@ -196,6 +226,16 @@ namespace TerroristaMiR___s.Properties {
         internal static System.Drawing.Bitmap _70707007071 {
             get {
                 object obj = ResourceManager.GetObject("70707007071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _777777777777777777777777 {
+            get {
+                object obj = ResourceManager.GetObject("777777777777777777777777", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +326,26 @@ namespace TerroristaMiR___s.Properties {
         internal static System.Drawing.Bitmap _8008088 {
             get {
                 object obj = ResourceManager.GetObject("8008088", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _888888888888888888 {
+            get {
+                object obj = ResourceManager.GetObject("888888888888888888", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8888888888888888881 {
+            get {
+                object obj = ResourceManager.GetObject("8888888888888888881", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

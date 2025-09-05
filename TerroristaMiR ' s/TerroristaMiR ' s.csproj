@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CJ3027678PR2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +84,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CJ3027678PR2DataSet.xsc">
+      <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CJ3027678PR2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CJ3027678PR2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CJ3027678PR2DataSet.xss">
+      <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -227,6 +243,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TETEU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55555555555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4444444444444444444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6666666666666666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\777777777777777777777777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\888888888888888888.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8888888888888888881.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
