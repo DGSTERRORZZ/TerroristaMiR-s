@@ -1,4 +1,7 @@
-﻿namespace TerroristaMiR___s
+﻿using System;
+using System.Windows.Forms;
+
+namespace TerroristaMiR___s
 {
     partial class FrmMat
     {
@@ -51,7 +54,7 @@
             this.BtnEnt.Size = new System.Drawing.Size(349, 68);
             this.BtnEnt.TabIndex = 0;
             this.BtnEnt.UseVisualStyleBackColor = false;
-            this.BtnEnt.Click += new System.EventHandler(this.button1_Click_1);
+            this.BtnEnt.Click += new System.EventHandler(this.BtnEnt_Click); // Esta linha causa o erro se o método não existir
             // 
             // LblMat
             // 
@@ -115,4 +118,3 @@
         private System.Windows.Forms.Button BtnSair;
     }
 }
-

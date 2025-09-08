@@ -33,24 +33,7 @@ namespace TerroristaMiR___s
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-      
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
+        private void BtnEnt_Click(object sender, EventArgs e)
         {
             FrmLogin frmLogin = new FrmLogin();
 
@@ -88,3 +71,6 @@ namespace TerroristaMiR___s
 }
 
 
+
+
+   
