@@ -151,20 +151,26 @@
   <data name="Captura de tela_19-8-2025_95248_www.canva1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela_19-8-2025_95248_www.canva.com1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="888888888888888888" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\888888888888888888.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="800808" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\800808.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de tela 2025-09-02 1154092" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 1154092.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="333333333333333333333333" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\333333333333333333333333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="414144141412" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\414144141412.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela_5-8-2025_10023_wallpaperaccess.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela_5-8-2025_10023_wallpaperaccess.com.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de tela 2025-09-09 094120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-09-09 094120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="12121212112" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12121212112.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TETEU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TETEU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4444444444444444" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4444444444444444.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +196,8 @@
   <data name="3131313131311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3131313131311.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="800808" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\800808.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TETEU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TETEU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="333333333333333333333333" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\333333333333333333333333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="7070700707" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7070700707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +220,9 @@
   <data name="Captura de tela 2025-09-02 115409" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 115409.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4444444444444444444" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4444444444444444444.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de tela 2025-09-02 1056381" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 1056381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,8 +232,8 @@
   <data name="Captura de tela 2025-09-02 1112302" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 1112302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="777777777777777777777777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777777777777777777777777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="414144141412" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\414144141412.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="616612662621" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\616612662621.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +247,8 @@
   <data name="55555555555" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\55555555555.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4444444444444444444" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4444444444444444444.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="777777777777777777777777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777777777777777777777777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2025-09-02 1112301" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 1112301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,16 +265,16 @@
   <data name="Captura de tela 2025-09-02 1154094" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-09-02 1154094.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="8888888888888888881" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8888888888888888881.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="8008087" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8008087.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="61661266262" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\61661266262.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="888888888888888888" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\888888888888888888.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8888888888888888881" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8888888888888888881.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2025-09-09 113708" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-09-09 113708.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

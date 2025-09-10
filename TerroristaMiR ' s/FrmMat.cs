@@ -23,7 +23,7 @@ namespace TerroristaMiR___s
             this.WindowState = FormWindowState.Maximized;
             this.TopMost = true;
         }
-            protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Escape)
             {
@@ -33,20 +33,24 @@ namespace TerroristaMiR___s
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void BtnEnt_Click(object sender, EventArgs e)
+            private void BtnPlay_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
+            Login Login = new Login();
+            //frmLogin.FormClosed += (s, args) => this.Show(); // Mostra a tela principal de novo
+            this.Hide(); // Esconde tela inicial
+            Login.ShowDialog(); // Mostra a tela de login
+            this.Show();
+        }
 
-            frmLogin.FormClosed += (s, args) => this.Show(); // Mostra a tela principal de novo
-            this.Hide(); // Esconde a tela principal
-
-            frmLogin.Show();
+        private void LblMat_Click(object sender, EventArgs e)
+        {
+            
         }
 
 
         private void BtnSair_Click(object sender, EventArgs e)
         {
-     
+
 
             DialogResult resultado = MessageBox.Show(
                 "Tem certeza que deseja sair?",
@@ -62,14 +66,9 @@ namespace TerroristaMiR___s
         }
 
 
-        private void LblMat_Click(object sender, EventArgs e)
-        {
 
-        }
     }
-
 }
-
 
 
 

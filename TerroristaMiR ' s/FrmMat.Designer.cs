@@ -31,30 +31,30 @@ namespace TerroristaMiR___s
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnEnt = new System.Windows.Forms.Button();
+            this.BtnPlay = new System.Windows.Forms.Button();
             this.LblMat = new System.Windows.Forms.Label();
             this.BtnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BtnEnt
+            // BtnPlay
             // 
-            this.BtnEnt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnEnt.BackColor = System.Drawing.Color.Transparent;
-            this.BtnEnt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnEnt.FlatAppearance.BorderSize = 0;
-            this.BtnEnt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BtnEnt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEnt.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnt.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.BtnEnt.Image = global::TerroristaMiR___s.Properties.Resources._414144141411;
-            this.BtnEnt.Location = new System.Drawing.Point(586, 400);
-            this.BtnEnt.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnEnt.Name = "BtnEnt";
-            this.BtnEnt.Size = new System.Drawing.Size(349, 68);
-            this.BtnEnt.TabIndex = 0;
-            this.BtnEnt.UseVisualStyleBackColor = false;
-            this.BtnEnt.Click += new System.EventHandler(this.BtnEnt_Click); // Esta linha causa o erro se o método não existir
+            this.BtnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.BtnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.BtnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnPlay.FlatAppearance.BorderSize = 0;
+            this.BtnPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPlay.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPlay.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.BtnPlay.Image = global::TerroristaMiR___s.Properties.Resources._414144141411;
+            this.BtnPlay.Location = new System.Drawing.Point(582, 494);
+            this.BtnPlay.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnPlay.Name = "BtnPlay";
+            this.BtnPlay.Size = new System.Drawing.Size(349, 68);
+            this.BtnPlay.TabIndex = 0;
+            this.BtnPlay.UseVisualStyleBackColor = false;
+            this.BtnPlay.Click += new System.EventHandler(this.BtnPlay_Click);
             // 
             // LblMat
             // 
@@ -98,7 +98,7 @@ namespace TerroristaMiR___s
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.LblMat);
-            this.Controls.Add(this.BtnEnt);
+            this.Controls.Add(this.BtnPlay);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Name = "FrmMat";
@@ -113,7 +113,7 @@ namespace TerroristaMiR___s
 
         #endregion
 
-        private System.Windows.Forms.Button BtnEnt;
+        private System.Windows.Forms.Button BtnPlay;
         private System.Windows.Forms.Label LblMat;
         private System.Windows.Forms.Button BtnSair;
     }

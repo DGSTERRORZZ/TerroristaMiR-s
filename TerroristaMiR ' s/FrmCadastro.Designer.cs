@@ -1,6 +1,8 @@
-﻿namespace TerroristaMiR___s
+﻿using System.Windows.Forms;
+
+namespace TerroristaMiR___s
 {
-    partial class FrmLogin
+    partial class FrmCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +37,8 @@
             this.TxbNom = new System.Windows.Forms.TextBox();
             this.TxbIda = new System.Windows.Forms.TextBox();
             this.TxbEml = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            this.TxbSenha = new System.Windows.Forms.TextBox();
+       
             // 
             // BtnSair
             // 
@@ -64,7 +67,7 @@
             // TxbPro
             // 
             this.TxbPro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 66F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbPro.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbPro.Location = new System.Drawing.Point(478, 303);
             this.TxbPro.Multiline = true;
             this.TxbPro.Name = "TxbPro";
@@ -83,14 +86,12 @@
             this.BtnSlv.Name = "BtnSlv";
             this.BtnSlv.Size = new System.Drawing.Size(551, 120);
             this.BtnSlv.TabIndex = 17;
-            this.BtnSlv.Text = "Save";
             this.BtnSlv.UseVisualStyleBackColor = false;
-            this.BtnSlv.Click += new System.EventHandler(this.BtnSlv_Click);
             // 
             // TxbNom
             // 
             this.TxbNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 66F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbNom.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbNom.Location = new System.Drawing.Point(478, 104);
             this.TxbNom.Multiline = true;
             this.TxbNom.Name = "TxbNom";
@@ -100,7 +101,7 @@
             // TxbIda
             // 
             this.TxbIda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbIda.Font = new System.Drawing.Font("Microsoft Sans Serif", 66F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbIda.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbIda.Location = new System.Drawing.Point(1140, 104);
             this.TxbIda.Multiline = true;
             this.TxbIda.Name = "TxbIda";
@@ -110,20 +111,29 @@
             // TxbEml
             // 
             this.TxbEml.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbEml.Font = new System.Drawing.Font("Microsoft Sans Serif", 66F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbEml.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbEml.Location = new System.Drawing.Point(1140, 303);
             this.TxbEml.Multiline = true;
             this.TxbEml.Name = "TxbEml";
             this.TxbEml.Size = new System.Drawing.Size(487, 94);
             this.TxbEml.TabIndex = 20;
             // 
+            // TxbSenha
+            // 
+            this.TxbSenha.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbSenha.Location = new System.Drawing.Point(761, 464);
+            this.TxbSenha.Name = "TxbSenha";
+            this.TxbSenha.Size = new System.Drawing.Size(583, 103);
+            this.TxbSenha.TabIndex = 21;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.TETEU;
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_09_113708;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.Controls.Add(this.TxbSenha);
             this.Controls.Add(this.TxbEml);
             this.Controls.Add(this.TxbIda);
             this.Controls.Add(this.TxbNom);
@@ -133,7 +143,7 @@
             this.Controls.Add(this.BtnSair);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "FrmCadastro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
@@ -149,5 +159,6 @@
         private System.Windows.Forms.TextBox TxbNom;
         private System.Windows.Forms.TextBox TxbIda;
         private System.Windows.Forms.TextBox TxbEml;
+        private System.Windows.Forms.TextBox TxbSenha;
     }
 }

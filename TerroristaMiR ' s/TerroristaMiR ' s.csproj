@@ -54,25 +54,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmCadastro1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="FrmMat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="FrmMat.Designer.cs">
+      <DependentUpon>FrmMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuiz.Designer.cs">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastro.Designer.cs">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMat.resx">
+      <DependentUpon>FrmMat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuiz.resx">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +152,7 @@
     <None Include="Resources\41414414141.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\resources\PressStart2P-Regular.ttf" />
     <None Include="Resources\yellow-square-1000-x-1000-wallpaper-012q36x57zmvf259.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -261,6 +283,70 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8888888888888888881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-09 094120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-09-09 113708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\resources\111111111111111111111.png" />
+    <Content Include="Resources\resources\12121212112.jpeg" />
+    <Content Include="Resources\resources\2222222222222.png" />
+    <Content Include="Resources\resources\313131313131.jpeg" />
+    <Content Include="Resources\resources\3131313131311.jpeg" />
+    <Content Include="Resources\resources\333333333333333333333333.png" />
+    <Content Include="Resources\resources\41414414141.png" />
+    <Content Include="Resources\resources\414144141411.png" />
+    <Content Include="Resources\resources\414144141412.png" />
+    <Content Include="Resources\resources\4444444444444444.png" />
+    <Content Include="Resources\resources\4444444444444444444.png" />
+    <Content Include="Resources\resources\55555555555.png" />
+    <Content Include="Resources\resources\61661266262.png" />
+    <Content Include="Resources\resources\616612662621.png" />
+    <Content Include="Resources\resources\6666666666666666.png" />
+    <Content Include="Resources\resources\7070700707.png" />
+    <Content Include="Resources\resources\70707007071.png" />
+    <Content Include="Resources\resources\777777777777777777777777.png" />
+    <Content Include="Resources\resources\800808.png" />
+    <Content Include="Resources\resources\8008081.png" />
+    <Content Include="Resources\resources\8008082.png" />
+    <Content Include="Resources\resources\8008083.png" />
+    <Content Include="Resources\resources\8008084.png" />
+    <Content Include="Resources\resources\8008085.png" />
+    <Content Include="Resources\resources\8008086.png" />
+    <Content Include="Resources\resources\8008087.png" />
+    <Content Include="Resources\resources\8008088.png" />
+    <Content Include="Resources\resources\888888888888888888.png" />
+    <Content Include="Resources\resources\8888888888888888881.png" />
+    <Content Include="Resources\resources\9199191919.png" />
+    <Content Include="Resources\resources\91991919191.png" />
+    <Content Include="Resources\resources\91991919192.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 105638.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1056381.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 111230.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1112301.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1112302.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1112303.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 111449.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 115409.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1154091.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1154092.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1154093.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-02 1154094.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-09 094120.png" />
+    <Content Include="Resources\resources\Captura de tela 2025-09-09 113708.png" />
+    <Content Include="Resources\resources\Captura de tela_19-8-2025_95248_www.canva.com.jpeg" />
+    <Content Include="Resources\resources\Captura de tela_19-8-2025_95248_www.canva.com1.jpeg" />
+    <Content Include="Resources\resources\Captura de tela_5-8-2025_10023_wallpaperaccess.com.jpeg" />
+    <Content Include="Resources\resources\Captura de tela_5-8-2025_10023_wallpaperaccess.com1.jpeg" />
+    <Content Include="Resources\resources\TETEU.png" />
+    <Content Include="Resources\resources\yellow-square-1000-x-1000-wallpaper-012q36x57zmvf259.jpg" />
+    <Content Include="Resources\resources\yellow-square-1000-x-1000-wallpaper-012q36x57zmvf2591.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
