@@ -8,6 +8,7 @@ namespace TerroristaMiR___s
         public FrmQuiz()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void BtnSair_Click(object sender, EventArgs e)
@@ -17,7 +18,14 @@ namespace TerroristaMiR___s
 
         private void BtnYes_Click(object sender, EventArgs e)
         {
-        
+            FrmQuiz1 frmQuiz1 = new FrmQuiz1();
+            frmQuiz1.ShowDialog();
+        }
+
+        private void BtnNo_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();
         }
     }
 }

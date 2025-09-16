@@ -70,7 +70,7 @@ namespace TerroristaMiR___s
             // TxbPro
             // 
             this.TxbPro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbPro.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbPro.Location = new System.Drawing.Point(476, 323);
             this.TxbPro.Multiline = true;
             this.TxbPro.Name = "TxbPro";
@@ -80,7 +80,7 @@ namespace TerroristaMiR___s
             // TxbNom
             // 
             this.TxbNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbNom.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbNom.Location = new System.Drawing.Point(466, 159);
             this.TxbNom.Multiline = true;
             this.TxbNom.Name = "TxbNom";
@@ -90,7 +90,7 @@ namespace TerroristaMiR___s
             // TxbIda
             // 
             this.TxbIda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbIda.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbIda.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbIda.Location = new System.Drawing.Point(1140, 159);
             this.TxbIda.Multiline = true;
             this.TxbIda.Name = "TxbIda";
@@ -100,7 +100,7 @@ namespace TerroristaMiR___s
             // TxbEml
             // 
             this.TxbEml.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbEml.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbEml.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbEml.Location = new System.Drawing.Point(1140, 323);
             this.TxbEml.Multiline = true;
             this.TxbEml.Name = "TxbEml";
@@ -111,7 +111,7 @@ namespace TerroristaMiR___s
             // TxbSenha
             // 
             this.TxbSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbSenha.Font = new System.Drawing.Font("Press Start 2P", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbSenha.Location = new System.Drawing.Point(476, 471);
             this.TxbSenha.Multiline = true;
             this.TxbSenha.Name = "TxbSenha";
@@ -138,7 +138,7 @@ namespace TerroristaMiR___s
             // TxbCfs
             // 
             this.TxbCfs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbCfs.Font = new System.Drawing.Font("Press Start 2P", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbCfs.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbCfs.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TxbCfs.Location = new System.Drawing.Point(1140, 471);
             this.TxbCfs.Multiline = true;
@@ -149,22 +149,35 @@ namespace TerroristaMiR___s
             // 
             // BtnMos1
             // 
-            this.BtnMos1.Location = new System.Drawing.Point(659, 569);
+            this.BtnMos1.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMos1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMos1.FlatAppearance.BorderSize = 0;
+            this.BtnMos1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnMos1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnMos1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMos1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMos1.Location = new System.Drawing.Point(613, 568);
             this.BtnMos1.Name = "BtnMos1";
-            this.BtnMos1.Size = new System.Drawing.Size(75, 23);
+            this.BtnMos1.Size = new System.Drawing.Size(75, 40);
             this.BtnMos1.TabIndex = 23;
             this.BtnMos1.Text = "🔒";
-            this.BtnMos1.UseVisualStyleBackColor = true;
+            this.BtnMos1.UseVisualStyleBackColor = false;
             this.BtnMos1.Click += new System.EventHandler(this.BtnMos1_Click);
             // 
             // BtnMos2
             // 
-            this.BtnMos2.Location = new System.Drawing.Point(1314, 568);
+            this.BtnMos2.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMos2.FlatAppearance.BorderSize = 0;
+            this.BtnMos2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnMos2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnMos2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMos2.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.BtnMos2.Location = new System.Drawing.Point(1348, 570);
             this.BtnMos2.Name = "BtnMos2";
-            this.BtnMos2.Size = new System.Drawing.Size(75, 23);
+            this.BtnMos2.Size = new System.Drawing.Size(71, 38);
             this.BtnMos2.TabIndex = 24;
             this.BtnMos2.Text = "🔒";
-            this.BtnMos2.UseVisualStyleBackColor = true;
+            this.BtnMos2.UseVisualStyleBackColor = false;
             this.BtnMos2.Click += new System.EventHandler(this.BtnMos2_Click);
             // 
             // FrmCadastro

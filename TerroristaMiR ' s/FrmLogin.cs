@@ -15,6 +15,7 @@ namespace TerroristaMiR___s
             TxbSenha.PasswordChar = '*';
             TxbPro.Font = new Font("Press Start 2P", 30, FontStyle.Regular);
             TxbSenha.Font = new Font("Press Start 2P", 30, FontStyle.Regular);
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private bool ValidarLogin(string prontuario, string senha)
@@ -81,6 +82,11 @@ namespace TerroristaMiR___s
         }
 
         private void TxbPro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
         {
 
         }

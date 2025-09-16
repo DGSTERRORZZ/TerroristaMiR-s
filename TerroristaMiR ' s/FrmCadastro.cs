@@ -26,6 +26,7 @@ namespace TerroristaMiR___s
             TxbEml.Font = new Font("Press Start 2P", 20, FontStyle.Regular);
             TxbSenha.Font = new Font("Press Start 2P", 20, FontStyle.Regular);
             TxbCfs.Font = new Font("Press Start 2P", 20, FontStyle.Regular);
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void BtnSair_Click(object sender, EventArgs e)

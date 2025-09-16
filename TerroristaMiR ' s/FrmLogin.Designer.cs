@@ -56,20 +56,20 @@
             // 
             this.TxbSenha.BackColor = System.Drawing.SystemColors.Window;
             this.TxbSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbSenha.Font = new System.Drawing.Font("Press Start 2P", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbSenha.Location = new System.Drawing.Point(740, 433);
             this.TxbSenha.Name = "TxbSenha";
             this.TxbSenha.PasswordChar = '*';
-            this.TxbSenha.Size = new System.Drawing.Size(490, 48);
+            this.TxbSenha.Size = new System.Drawing.Size(490, 55);
             this.TxbSenha.TabIndex = 2;
             // 
             // TxbPro
             // 
             this.TxbPro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbPro.Font = new System.Drawing.Font("Press Start 2P", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbPro.Location = new System.Drawing.Point(740, 259);
             this.TxbPro.Name = "TxbPro";
-            this.TxbPro.Size = new System.Drawing.Size(490, 48);
+            this.TxbPro.Size = new System.Drawing.Size(490, 55);
             this.TxbPro.TabIndex = 1;
             this.TxbPro.TextChanged += new System.EventHandler(this.TxbPro_TextChanged);
             // 
@@ -81,7 +81,7 @@
             this.BtnCad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnCad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCad.Font = new System.Drawing.Font("Press Start 2P", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCad.Location = new System.Drawing.Point(859, 585);
             this.BtnCad.Name = "BtnCad";
             this.BtnCad.Size = new System.Drawing.Size(253, 39);
@@ -123,6 +123,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

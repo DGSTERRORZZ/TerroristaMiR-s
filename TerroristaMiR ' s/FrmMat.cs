@@ -15,14 +15,14 @@ namespace TerroristaMiR___s
         public FrmMat()
         {
             InitializeComponent();
-        }
+            this.FormBorderStyle = FormBorderStyle.None;
 
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.TopMost = true;
+           
         }
+        
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Escape)

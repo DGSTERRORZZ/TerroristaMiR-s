@@ -43,7 +43,7 @@
             // 
             // BtnYes
             // 
-            this.BtnYes.BackColor = System.Drawing.Color.Transparent;
+            this.BtnYes.BackColor = System.Drawing.Color.Black;
             this.BtnYes.FlatAppearance.BorderSize = 0;
             this.BtnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -57,7 +57,7 @@
             // 
             // BtnNo
             // 
-            this.BtnNo.BackColor = System.Drawing.Color.Transparent;
+            this.BtnNo.BackColor = System.Drawing.Color.DimGray;
             this.BtnNo.FlatAppearance.BorderSize = 0;
             this.BtnNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -67,13 +67,14 @@
             this.BtnNo.Size = new System.Drawing.Size(318, 59);
             this.BtnNo.TabIndex = 2;
             this.BtnNo.UseVisualStyleBackColor = false;
+            this.BtnNo.Click += new System.EventHandler(this.BtnNo_Click);
             // 
             // FrmQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_16_123942;
-            this.ClientSize = new System.Drawing.Size(1613, 994);
+            this.ClientSize = new System.Drawing.Size(1725, 989);
             this.Controls.Add(this.BtnNo);
             this.Controls.Add(this.BtnYes);
             this.Controls.Add(this.label1);
