@@ -39,6 +39,7 @@
             // 
             this.BtnEnt.BackColor = System.Drawing.Color.Transparent;
             this.BtnEnt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEnt.FlatAppearance.BorderSize = 0;
             this.BtnEnt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnEnt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -49,15 +50,7 @@
             this.BtnEnt.TabIndex = 0;
             this.BtnEnt.UseMnemonic = false;
             this.BtnEnt.UseVisualStyleBackColor = false;
-            // 
-            // TxbPro
-            // 
-            this.TxbPro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxbPro.Font = new System.Drawing.Font("Press Start 2P", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxbPro.Location = new System.Drawing.Point(740, 259);
-            this.TxbPro.Name = "TxbPro";
-            this.TxbPro.Size = new System.Drawing.Size(490, 48);
-            this.TxbPro.TabIndex = 1;
+            this.BtnEnt.Click += new System.EventHandler(this.BtnEnt_Click_1);
             // 
             // TxbSenha
             // 
@@ -70,15 +63,32 @@
             this.TxbSenha.Size = new System.Drawing.Size(490, 48);
             this.TxbSenha.TabIndex = 2;
             // 
+            // TxbPro
+            // 
+            this.TxbPro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxbPro.Font = new System.Drawing.Font("Press Start 2P", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxbPro.Location = new System.Drawing.Point(740, 259);
+            this.TxbPro.Name = "TxbPro";
+            this.TxbPro.Size = new System.Drawing.Size(490, 48);
+            this.TxbPro.TabIndex = 1;
+            this.TxbPro.TextChanged += new System.EventHandler(this.TxbPro_TextChanged);
+            // 
             // BtnCad
             // 
-            this.BtnCad.Location = new System.Drawing.Point(876, 593);
+            this.BtnCad.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCad.FlatAppearance.BorderSize = 0;
+            this.BtnCad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnCad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCad.Font = new System.Drawing.Font("Press Start 2P", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCad.Location = new System.Drawing.Point(859, 585);
             this.BtnCad.Name = "BtnCad";
-            this.BtnCad.Size = new System.Drawing.Size(222, 23);
+            this.BtnCad.Size = new System.Drawing.Size(253, 39);
             this.BtnCad.TabIndex = 3;
             this.BtnCad.Text = "Cadastrar-se";
-            this.BtnCad.UseVisualStyleBackColor = true;
-            
+            this.BtnCad.UseVisualStyleBackColor = false;
+            this.BtnCad.Click += new System.EventHandler(this.BtnCad_Click);
             // 
             // BtnMos
             // 
@@ -93,8 +103,9 @@
             this.BtnMos.Name = "BtnMos";
             this.BtnMos.Size = new System.Drawing.Size(75, 49);
             this.BtnMos.TabIndex = 4;
-            this.BtnMos.Text = "👁";
+            this.BtnMos.Text = "🔒";
             this.BtnMos.UseVisualStyleBackColor = false;
+            this.BtnMos.Click += new System.EventHandler(this.BtnMos_Click);
             // 
             // FrmLogin
             // 

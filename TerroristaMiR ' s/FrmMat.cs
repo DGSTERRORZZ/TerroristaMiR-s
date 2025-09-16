@@ -35,10 +35,10 @@ namespace TerroristaMiR___s
 
             private void BtnPlay_Click(object sender, EventArgs e)
         {
-            Login Login = new Login();
+            FrmLogin login = new FrmLogin();
             //frmLogin.FormClosed += (s, args) => this.Show(); // Mostra a tela principal de novo
             this.Hide(); // Esconde tela inicial
-            Login.ShowDialog(); // Mostra a tela de login
+            login.ShowDialog(); // Mostra a tela de login
             this.Show();
         }
 

@@ -14,6 +14,11 @@ namespace TerroristaMiR___s
         {
             this.Close();
         }
+
+        private void BtnYes_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
 

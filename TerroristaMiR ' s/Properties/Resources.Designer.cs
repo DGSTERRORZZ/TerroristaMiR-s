@@ -543,6 +543,26 @@ namespace TerroristaMiR___s.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_16_095128 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-16 095128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_16_123942 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-16 123942", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_5_8_2025_10023_wallpaperaccess_com {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela_5-8-2025_10023_wallpaperaccess.com", resourceCulture);
