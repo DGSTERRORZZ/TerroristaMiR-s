@@ -81,12 +81,12 @@
             this.BtnCad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnCad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCad.Location = new System.Drawing.Point(859, 585);
+            this.BtnCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCad.Location = new System.Drawing.Point(863, 565);
             this.BtnCad.Name = "BtnCad";
-            this.BtnCad.Size = new System.Drawing.Size(253, 39);
+            this.BtnCad.Size = new System.Drawing.Size(253, 58);
             this.BtnCad.TabIndex = 3;
-            this.BtnCad.Text = "Cadastrar-se";
+            this.BtnCad.Text = " To Register";
             this.BtnCad.UseVisualStyleBackColor = false;
             this.BtnCad.Click += new System.EventHandler(this.BtnCad_Click);
             // 
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_09_094120;
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_18_160736;
             this.ClientSize = new System.Drawing.Size(1872, 1061);
             this.Controls.Add(this.BtnMos);
             this.Controls.Add(this.BtnCad);

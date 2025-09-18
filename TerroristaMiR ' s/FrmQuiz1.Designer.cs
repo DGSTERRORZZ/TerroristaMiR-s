@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1550, 670);
+            this.ClientSize = new System.Drawing.Size(1565, 708);
             this.Name = "FrmQuiz1";
             this.Text = "FrmQuiz1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
