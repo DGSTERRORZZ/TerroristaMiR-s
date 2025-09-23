@@ -43,7 +43,7 @@
             // 
             // BtnYes
             // 
-            this.BtnYes.BackColor = System.Drawing.Color.Black;
+            this.BtnYes.BackColor = System.Drawing.Color.Transparent;
             this.BtnYes.FlatAppearance.BorderSize = 0;
             this.BtnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -57,7 +57,7 @@
             // 
             // BtnNo
             // 
-            this.BtnNo.BackColor = System.Drawing.Color.DimGray;
+            this.BtnNo.BackColor = System.Drawing.Color.Transparent;
             this.BtnNo.FlatAppearance.BorderSize = 0;
             this.BtnNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
