@@ -65,19 +65,28 @@ namespace TerroristaMiR___s
 
         private void BtnEnt_Click_1(object sender, EventArgs e)
         {
-
-            string prontuario = TxbPro.Text.Trim();
-            string senha = TxbSenha.Text.Trim();
-
-            if (ValidarLogin(prontuario, senha))
+            if (TxbPro.Text.Trim() == "ADMIN" && TxbSenha.Text.Trim() == "1234")
             {
-                IsLoggedIn = true;
-                FrmQuiz frmQuiz = new FrmQuiz();
-                frmQuiz.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Prontuário ou senha inválidos.");
+                FrmAdmin admin = new FrmAdmin();
+                this.Hide();
+                admin.ShowDialog();
+                this.Show();
+                return;
+
+
+                string prontuario = TxbPro.Text.Trim();
+                string senha = TxbSenha.Text.Trim();
+
+                if (ValidarLogin(prontuario, senha))
+                {
+                    IsLoggedIn = true;
+                    FrmQuiz frmQuiz = new FrmQuiz();
+                    frmQuiz.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Prontuário ou senha inválidos.");
+                }
             }
         }
 
