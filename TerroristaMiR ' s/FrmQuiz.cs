@@ -30,6 +30,11 @@ namespace TerroristaMiR___s
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
         }
+
+        private void FrmQuiz_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

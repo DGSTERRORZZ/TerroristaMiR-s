@@ -603,6 +603,36 @@ namespace TerroristaMiR___s.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_16_083139 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-16 083139", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_16_083238 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-16 083238", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_16_085514 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-16 085514", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_5_8_2025_10023_wallpaperaccess_com {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela_5-8-2025_10023_wallpaperaccess.com", resourceCulture);

@@ -86,6 +86,10 @@ namespace TerroristaMiR___s
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao salvar pergunta: " + ex.Message);
+
+                BtnSlvAdmin.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 255, 100);
+                BtnSlvAdmin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 200, 50);
+
             }
         }
 
@@ -93,6 +97,17 @@ namespace TerroristaMiR___s
         {
 
         }
+
+        private void TxbD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgvPerguntas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
+
   

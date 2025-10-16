@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_16_123942;
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_10_16_083238;
             this.ClientSize = new System.Drawing.Size(1725, 989);
             this.Controls.Add(this.BtnNo);
             this.Controls.Add(this.BtnYes);
@@ -81,6 +81,7 @@
             this.Name = "FrmQuiz";
             this.Text = "FrmQuiz";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmQuiz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
