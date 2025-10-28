@@ -18,6 +18,26 @@ namespace TerroristaMiR___s
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
         }
+        private void CarregarPerguntas()
+        {
+            string connectionString = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
+            string query = "SELECT ID, TextoPergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD, RespostaCorreta, Nivel FROM Perguntas";
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlDataAdapter da = new SqlDataAdapter(query, con))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    DgvPerguntas.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar perguntas: " + ex.Message);
+            }
+        }
 
         private void CmbNivel_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -31,6 +51,7 @@ namespace TerroristaMiR___s
 
             CmbCorreta.Items.AddRange(new string[] { "A", "B", "C", "D" });
             CmbNivel.Items.AddRange(new string[] { "1 - Fácil", "2 - Médio", "3 - Difícil" });
+            CarregarPerguntas();
         }
 
  
@@ -91,6 +112,8 @@ namespace TerroristaMiR___s
                 BtnSlvAdmin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 200, 50);
 
             }
+            CarregarPerguntas();
+
         }
 
         private void TxbB_TextChanged(object sender, EventArgs e)

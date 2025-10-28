@@ -140,8 +140,13 @@
             // 
             // DgvPerguntas
             // 
+            this.DgvPerguntas.AllowUserToAddRows = false;
+            this.DgvPerguntas.AllowUserToDeleteRows = false;
+            this.DgvPerguntas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvPerguntas.BackgroundColor = System.Drawing.Color.Black;
+            this.DgvPerguntas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DgvPerguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvPerguntas.Location = new System.Drawing.Point(1419, 443);
+            this.DgvPerguntas.Location = new System.Drawing.Point(1131, 248);
             this.DgvPerguntas.Name = "DgvPerguntas";
             this.DgvPerguntas.Size = new System.Drawing.Size(240, 150);
             this.DgvPerguntas.TabIndex = 8;
