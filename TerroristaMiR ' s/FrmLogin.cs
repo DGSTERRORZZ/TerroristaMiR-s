@@ -21,7 +21,7 @@ namespace TerroristaMiR___s
         private bool ValidarLogin(string prontuario, string senha)
         {
             string connStr = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
-            string query = "SELECT COUNT(*) FROM usuarios WHERE prontuario = @prontuario AND senha = @senha";
+            string query = "SELECT ID FROM usuarios WHERE prontuario = @prontuario AND senha = @senha";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -31,7 +31,7 @@ namespace TerroristaMiR___s
 
                 conn.Open();
                 int count = (int)cmd.ExecuteScalar();
-
+ 
                 return count > 0;
                 
                    
@@ -69,6 +69,7 @@ namespace TerroristaMiR___s
             string senha = TxbSenha.Text.Trim();
             if (ValidarLogin(prontuario, senha))
             {
+                UsuarioLogado.IdUsuario = prontuario;
                 IsLoggedIn = true;
                 FrmQuiz frmQuiz = new FrmQuiz();
                 frmQuiz.ShowDialog();

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace TerroristaMiR___s
 {
@@ -87,6 +88,7 @@ namespace TerroristaMiR___s
             this.RbD.TabStop = true;
             this.RbD.Text = "Alternativa D";
             this.RbD.UseVisualStyleBackColor = true;
+            this.RbD.CheckedChanged += new System.EventHandler(this.RbD_CheckedChanged);
             // 
             // LblTempo
             // 
@@ -105,6 +107,7 @@ namespace TerroristaMiR___s
             this.LblPergunta.Size = new System.Drawing.Size(67, 13);
             this.LblPergunta.TabIndex = 5;
             this.LblPergunta.Text = "PERGUNTA";
+            this.LblPergunta.Click += new System.EventHandler(this.LblPergunta_Click);
             // 
             // BtnProxima
             // 
@@ -113,14 +116,14 @@ namespace TerroristaMiR___s
             this.BtnProxima.Size = new System.Drawing.Size(75, 23);
             this.BtnProxima.TabIndex = 6;
             this.BtnProxima.UseVisualStyleBackColor = true;
-            this.BtnProxima.Click += new System.EventHandler(this.BtnProxima_Click_1);
+            this.BtnProxima.Click += new System.EventHandler(this.BtnProxima_Click);
             // 
             // FrmQuiz1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_23_101028;
-            this.ClientSize = new System.Drawing.Size(1909, 976);
+            this.ClientSize = new System.Drawing.Size(1858, 932);
             this.Controls.Add(this.BtnProxima);
             this.Controls.Add(this.LblPergunta);
             this.Controls.Add(this.LblTempo);
@@ -131,15 +134,40 @@ namespace TerroristaMiR___s
             this.Name = "FrmQuiz1";
             this.Text = "FrmQuiz1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmQuiz1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        private void BtnProxima_Click_1(object sender, EventArgs e)
+       
+            private void BtnProxima_Click_(object sender, EventArgs e)
         {
-            
+            string respostaSelecionada = "";
+
+            if (RbA.Checked) respostaSelecionada = "A";
+            else if (RbB.Checked) respostaSelecionada = "B";
+            else if (RbC.Checked) respostaSelecionada = "C";
+            else if (RbD.Checked) respostaSelecionada = "D";
+            else
+            {
+                MessageBox.Show("Selecione uma alternativa antes de continuar!");
+                return;
+            }
+
+            Pergunta p = perguntasDoDia[perguntaAtual];
+            bool acertou = respostaSelecionada == p.Correta;
+            TimeSpan tempo = DateTime.Now - inicioPergunta;
+
+            RegistrarResposta(UsuarioLogado.IdUsuario, p, acertou, (int)tempo.TotalSeconds);
+
+            if (acertou) acertos++;
+
+            perguntaAtual++;
+            MostrarProximaPergunta();
         }
+
+        
 
         #endregion
 
