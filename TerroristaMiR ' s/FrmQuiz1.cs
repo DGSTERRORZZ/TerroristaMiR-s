@@ -115,7 +115,8 @@ namespace TerroristaMiR___s
 
         private void BtnProxima_Click(object sender, EventArgs e)
         {
-            
+            // determina a alternativa selecionada como string "A"/"B"/"C"/"D"
+            string respostaSelecionada = "";
 
             if (RbA.Checked) respostaSelecionada = "A";
             else if (RbB.Checked) respostaSelecionada = "B";
@@ -127,18 +128,23 @@ namespace TerroristaMiR___s
                 return;
             }
 
+            // pega a pergunta atual
             Pergunta p = perguntasDoDia[perguntaAtual];
-            bool acertou = respostaSelecionada == p.Correta;
 
+            // calcula tempo
             TimeSpan tempo = DateTime.Now - inicioPergunta;
-            RegistrarResposta(UsuarioLogado.IdUsuario, p, acertou, (int)tempo.TotalSeconds);
+            int tempoSegundos = (int)tempo.TotalSeconds;
 
+            // chama o método com os tipos corretos: (string, Pergunta, string, int)
+            RegistrarResposta(UsuarioLogado.IdUsuario, p, respostaSelecionada, tempoSegundos);
+
+            // avança
             perguntaAtual++;
             MostrarProximaPergunta();
         }
 
 
-        private void RegistrarResposta(string prontuario, Pergunta p, bool acertou, int tempo)
+        private void RegistrarResposta(string prontuario, Pergunta p, string respostaSelecionada, int tempo)
         {
             string connStr = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
 
@@ -148,18 +154,23 @@ namespace TerroristaMiR___s
                 {
                     conn.Open();
 
+                    // determina se acertou (true/false)
+                    bool acertou = (respostaSelecionada == p.Correta);
+
                     string insertQuery = @"
-                        INSERT INTO Respostas (IdUsuario, IdPergunta, RespostaDada, Correta, TempoRespostaSegundos, DataResposta)
-                        VALUES (@IdUsuario, @IdPergunta, @RespostaDada, @Correta, @TempoRespostaSegundos, GETDATE())";
+                INSERT INTO Respostas 
+                    (IdUsuario, IdPergunta, RespostaDada, Correta, TempoRespostaSegundos, DataResposta)
+                VALUES 
+                    (@IdUsuario, @IdPergunta, @RespostaDada, @Correta, @TempoRespostaSegundos, GETDATE())";
 
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
-                        
-                        cmd.Parameters.AddWithValue("@IdUsuario", prontuario);
-                        cmd.Parameters.AddWithValue("@IdPergunta", p.Id);
-                        cmd.Parameters.AddWithValue("@RespostaDada", respostaSelecionada);
-                        cmd.Parameters.AddWithValue("@Correta",p.Correta);
-                        cmd.Parameters.AddWithValue("@TempoRespostaSegundos", tempo);
+                        cmd.Parameters.AddWithValue("@IdUsuario", prontuario);               // NVARCHAR
+                        cmd.Parameters.AddWithValue("@IdPergunta", p.Id);                    // INT
+                        cmd.Parameters.AddWithValue("@RespostaDada", respostaSelecionada);   // NVARCHAR ("A","B",...)
+                        cmd.Parameters.AddWithValue("@Correta", acertou ? 1 : 0);            // BIT -> envia 1 ou 0
+                        cmd.Parameters.AddWithValue("@TempoRespostaSegundos", tempo);        // INT
+
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -169,6 +180,8 @@ namespace TerroristaMiR___s
                 MessageBox.Show("Erro ao registrar resposta: " + ex.Message);
             }
         }
+
+
 
         private void RbD_CheckedChanged(object sender, EventArgs e)
         {

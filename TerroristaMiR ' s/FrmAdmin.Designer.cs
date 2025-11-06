@@ -42,7 +42,6 @@
             // 
             // TxbB
             // 
-            this.TxbB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxbB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxbB.Location = new System.Drawing.Point(1113, 418);
@@ -73,7 +72,7 @@
             // TxbD
             // 
             this.TxbD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxbD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TxbD.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TxbD.Location = new System.Drawing.Point(1113, 626);
             this.TxbD.Multiline = true;
             this.TxbD.Name = "TxbD";

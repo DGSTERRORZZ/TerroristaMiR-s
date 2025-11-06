@@ -141,31 +141,7 @@ namespace TerroristaMiR___s
         }
 
        
-            private void BtnProxima_Click_(object sender, EventArgs e)
-        {
-            string respostaSelecionada = "";
-
-            if (RbA.Checked) respostaSelecionada = "A";
-            else if (RbB.Checked) respostaSelecionada = "B";
-            else if (RbC.Checked) respostaSelecionada = "C";
-            else if (RbD.Checked) respostaSelecionada = "D";
-            else
-            {
-                MessageBox.Show("Selecione uma alternativa antes de continuar!");
-                return;
-            }
-
-            Pergunta p = perguntasDoDia[perguntaAtual];
-            bool acertou = respostaSelecionada == p.Correta;
-            TimeSpan tempo = DateTime.Now - inicioPergunta;
-
-            RegistrarResposta(UsuarioLogado.IdUsuario, p, acertou, (int)tempo.TotalSeconds);
-
-            if (acertou) acertos++;
-
-            perguntaAtual++;
-            MostrarProximaPergunta();
-        }
+        
 
         
 
