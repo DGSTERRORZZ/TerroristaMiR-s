@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -8,24 +9,20 @@ namespace TerroristaMiR___s
 {
     public partial class FrmQuiz1 : Form
     {
+        private int acertos = 0;
+        string respostaSelecionada = "";
+        private int tempoDecorrido = 0;
         private List<Pergunta> perguntasDoDia = new List<Pergunta>();
         private int perguntaAtual = 0;
         private DateTime inicioPergunta;
-        private int acertos = 0;
-        string respostaSelecionada = "";
+
+
         public FrmQuiz1()
         {
             InitializeComponent();
         }
 
-        private void FrmQuiz1_Load(object sender, EventArgs e)
-        {
-            
-            
-        }
 
-
-    
         private void CarregarQuestoesDoDia()
         {
             string connStr = "Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
@@ -54,7 +51,7 @@ namespace TerroristaMiR___s
                         {
                             while (reader.Read())
                             {
-                                
+
                                 Pergunta pergunta = new Pergunta
                                 {
                                     Id = (int)reader["ID"],
@@ -86,12 +83,8 @@ namespace TerroristaMiR___s
 
         private void MostrarProximaPergunta()
         {
-            perguntaAtual++;
-            if (perguntaAtual >= perguntasDoDia.Count)
-            {
-                MessageBox.Show("Você terminou o quiz de hoje!");
-                return;
-            }
+            
+           
 
             Pergunta pergunta = perguntasDoDia[perguntaAtual];
 
@@ -110,11 +103,25 @@ namespace TerroristaMiR___s
 
             // Reseta o tempo de resposta
             inicioPergunta = DateTime.Now;
+            tempoDecorrido = 0;
+            LblTempo.Text = "Tempo: 00:00";
+            timerPergunta.Start();
+            perguntaAtual++;
         }
 
 
         private void BtnProxima_Click(object sender, EventArgs e)
         {
+
+            if (perguntaAtual >= perguntasDoDia.Count)
+            {
+                MessageBox.Show("Você terminou o quiz de hoje!");
+                this.Close();
+            }
+            timerPergunta.Stop();
+            // calcula tempo
+            TimeSpan tempo = DateTime.Now - inicioPergunta;
+            int tempoSegundos = (int)tempo.TotalSeconds;
             // determina a alternativa selecionada como string "A"/"B"/"C"/"D"
             string respostaSelecionada = "";
 
@@ -130,19 +137,12 @@ namespace TerroristaMiR___s
 
             // pega a pergunta atual
             Pergunta p = perguntasDoDia[perguntaAtual];
-
-            // calcula tempo
-            TimeSpan tempo = DateTime.Now - inicioPergunta;
-            int tempoSegundos = (int)tempo.TotalSeconds;
-
             // chama o método com os tipos corretos: (string, Pergunta, string, int)
             RegistrarResposta(UsuarioLogado.IdUsuario, p, respostaSelecionada, tempoSegundos);
-
             // avança
-            perguntaAtual++;
+            //perguntaAtual++;
             MostrarProximaPergunta();
         }
-
 
         private void RegistrarResposta(string prontuario, Pergunta p, string respostaSelecionada, int tempo)
         {
@@ -154,27 +154,45 @@ namespace TerroristaMiR___s
                 {
                     conn.Open();
 
-                    // determina se acertou (true/false)
-                    bool acertou = (respostaSelecionada == p.Correta);
-
+                    // 1️⃣ Inserir resposta
                     string insertQuery = @"
-                INSERT INTO Respostas 
-                    (IdUsuario, IdPergunta, RespostaDada, Correta, TempoRespostaSegundos, DataResposta)
-                VALUES 
-                    (@IdUsuario, @IdPergunta, @RespostaDada, @Correta, @TempoRespostaSegundos, GETDATE())";
+                INSERT INTO Respostas (IdUsuario, IdPergunta, RespostaDada, Correta, TempoRespostaSegundos, DataResposta)
+                VALUES (@IdUsuario, @IdPergunta, @RespostaDada, @Correta, @TempoRespostaSegundos, GETDATE())";
 
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@IdUsuario", prontuario);               // NVARCHAR
-                        cmd.Parameters.AddWithValue("@IdPergunta", p.Id);                    // INT
-                        cmd.Parameters.AddWithValue("@RespostaDada", respostaSelecionada);   // NVARCHAR ("A","B",...)
-                        cmd.Parameters.AddWithValue("@Correta", acertou ? 1 : 0);            // BIT -> envia 1 ou 0
-                        cmd.Parameters.AddWithValue("@TempoRespostaSegundos", tempo);        // INT
+                        bool acertou = (respostaSelecionada == p.Correta);
 
+                        cmd.Parameters.AddWithValue("@IdUsuario", prontuario);
+                        cmd.Parameters.AddWithValue("@IdPergunta", p.Id);
+                        cmd.Parameters.AddWithValue("@RespostaDada", respostaSelecionada);
+                        cmd.Parameters.AddWithValue("@Correta", acertou ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@TempoRespostaSegundos", tempo);
                         cmd.ExecuteNonQuery();
+
+                        // 2️⃣ Se acertou, soma 100 pontos
+                        if (acertou)
+                        {
+                            MessageBox.Show("Parabéns você acertou a alternativa correta ");
+                            string updatePontuacao = @"
+                               UPDATE Usuarios
+                               SET Pontuacao = ISNULL(Pontuacao, 0) + 100
+                               WHERE prontuario = @IdUsuario";
+
+                            using (SqlCommand cmdPontuacao = new SqlCommand(updatePontuacao, conn))
+                            {
+                                cmdPontuacao.Parameters.AddWithValue("@IdUsuario", prontuario);
+                                cmdPontuacao.ExecuteNonQuery();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("A resposta correta era a alternativa " + p.Correta);
+                        }
                     }
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao registrar resposta: " + ex.Message);
@@ -183,10 +201,7 @@ namespace TerroristaMiR___s
 
 
 
-        private void RbD_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void LblPergunta_Click(object sender, EventArgs e)
         {
@@ -195,9 +210,62 @@ namespace TerroristaMiR___s
 
         private void FrmQuiz1_Load_1(object sender, EventArgs e)
         {
+
             CarregarQuestoesDoDia();
             perguntaAtual = 0; // começa na primeira
             MostrarProximaPergunta();
+        }
+
+        private void timerPergunta_Tick(object sender, EventArgs e)
+        {
+
+            {
+                tempoDecorrido++;
+                TimeSpan ts = TimeSpan.FromSeconds(tempoDecorrido);
+                LblTempo.Text = $"Tempo: {ts:mm\\:ss}";
+            }
+
+        }
+
+
+        private void RbA_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RbA.BackColor == Color.White && RbA.Checked == true)
+                RbA.BackColor = Color.Yellow;
+            else
+            {
+                RbA.BackColor = Color.White;
+            }
+        }
+
+        private void RbB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RbB.BackColor == Color.White && RbB.Checked == true)
+                RbB.BackColor = Color.Yellow;
+            else
+            {
+                RbB.BackColor = Color.White;
+            }
+        }
+
+        private void RbC_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RbC.BackColor == Color.White && RbC.Checked == true)
+                RbC.BackColor = Color.Yellow;
+            else
+            {
+                RbC.BackColor = Color.White;
+            }
+        }
+    
+     private void RbD_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RbD.BackColor == Color.White && RbD.Checked == true)
+                RbD.BackColor = Color.Yellow;
+            else
+            {
+                RbD.BackColor = Color.White;
+            }
         }
     }
 

@@ -21,7 +21,7 @@ namespace TerroristaMiR___s
         private void CarregarPerguntas()
         {
             string connectionString = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
-            string query = "SELECT ID, TextoPergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD, RespostaCorreta, Nivel FROM Perguntas";
+            string query = "SELECT ID, TextoPergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD, RespostaCorreta, NivelDificuldade FROM Perguntas";
 
             try
             {

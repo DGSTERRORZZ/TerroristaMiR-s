@@ -8,6 +8,7 @@ namespace TerroristaMiR___s
 {
     public partial class FrmQuiz : Form
     {
+        private bool perguntasGeradas = false;
         public FrmQuiz()
         {
             InitializeComponent();
@@ -81,7 +82,7 @@ namespace TerroristaMiR___s
                             insCmd.ExecuteNonQuery();
                         }
                     }
-
+                    perguntasGeradas = true;
                     MessageBox.Show("✅ 10 perguntas foram sorteadas e registradas para o dia de hoje!");
                 }
             }
