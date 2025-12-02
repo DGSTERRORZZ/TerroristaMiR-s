@@ -72,6 +72,18 @@ namespace TerroristaMiR___s
         {
 
         }
+
+        private void FrmRanking_Load_1(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'cJ3027678PR2DataSet1.usuarios'. Você pode movê-la ou removê-la conforme necessário.
+            this.usuariosTableAdapter.Fill(this.cJ3027678PR2DataSet1.usuarios);
+
+        }
+
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -40,7 +40,6 @@ namespace TerroristaMiR___s
             this.LblPergunta = new System.Windows.Forms.Label();
             this.BtnProxima = new System.Windows.Forms.Button();
             this.timerPergunta = new System.Windows.Forms.Timer(this.components);
-            this.BtnVerRanking = new System.Windows.Forms.Button();
             this.LblPontuacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -163,27 +162,15 @@ namespace TerroristaMiR___s
             this.timerPergunta.Interval = 1000;
             this.timerPergunta.Tick += new System.EventHandler(this.timerPergunta_Tick);
             // 
-            // BtnVerRanking
-            // 
-            this.BtnVerRanking.BackColor = System.Drawing.Color.Transparent;
-            this.BtnVerRanking.FlatAppearance.BorderSize = 0;
-            this.BtnVerRanking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BtnVerRanking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnVerRanking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVerRanking.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerRanking.Location = new System.Drawing.Point(1582, 76);
-            this.BtnVerRanking.Name = "BtnVerRanking";
-            this.BtnVerRanking.Size = new System.Drawing.Size(171, 53);
-            this.BtnVerRanking.TabIndex = 7;
-            this.BtnVerRanking.Text = "Ver Ranking";
-            this.BtnVerRanking.UseVisualStyleBackColor = false;
-            // 
             // LblPontuacao
             // 
             this.LblPontuacao.AutoSize = true;
-            this.LblPontuacao.Location = new System.Drawing.Point(530, 276);
+            this.LblPontuacao.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LblPontuacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPontuacao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblPontuacao.Location = new System.Drawing.Point(1403, 278);
             this.LblPontuacao.Name = "LblPontuacao";
-            this.LblPontuacao.Size = new System.Drawing.Size(71, 13);
+            this.LblPontuacao.Size = new System.Drawing.Size(120, 24);
             this.LblPontuacao.TabIndex = 8;
             this.LblPontuacao.Text = "Pontuação: 0";
             // 
@@ -194,7 +181,6 @@ namespace TerroristaMiR___s
             this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_23_101028;
             this.ClientSize = new System.Drawing.Size(1858, 932);
             this.Controls.Add(this.LblPontuacao);
-            this.Controls.Add(this.BtnVerRanking);
             this.Controls.Add(this.BtnProxima);
             this.Controls.Add(this.LblPergunta);
             this.Controls.Add(this.LblTempo);
@@ -226,7 +212,6 @@ namespace TerroristaMiR___s
         private System.Windows.Forms.Label LblPergunta;
         private System.Windows.Forms.Button BtnProxima;
         private Timer timerPergunta;
-        private Button BtnVerRanking;
         private Label LblPontuacao;
     }
 }

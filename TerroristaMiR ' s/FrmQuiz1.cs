@@ -344,6 +344,11 @@ namespace TerroristaMiR___s
                 MessageBox.Show("Erro ao atualizar pontuação: " + ex.Message);
             }
         }
+
+        private void BtnVerRanking_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

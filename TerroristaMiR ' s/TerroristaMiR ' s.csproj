@@ -54,6 +54,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CJ3027678PR2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CJ3027678PR2DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +144,17 @@
     </None>
     <None Include="CJ3027678PR2DataSet.xss">
       <DependentUpon>CJ3027678PR2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CJ3027678PR2DataSet1.xsc">
+      <DependentUpon>CJ3027678PR2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CJ3027678PR2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CJ3027678PR2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CJ3027678PR2DataSet1.xss">
+      <DependentUpon>CJ3027678PR2DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
