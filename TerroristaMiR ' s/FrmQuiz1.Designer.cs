@@ -183,9 +183,9 @@ namespace TerroristaMiR___s
             this.LblPontuacao.AutoSize = true;
             this.LblPontuacao.Location = new System.Drawing.Point(530, 276);
             this.LblPontuacao.Name = "LblPontuacao";
-            this.LblPontuacao.Size = new System.Drawing.Size(73, 13);
+            this.LblPontuacao.Size = new System.Drawing.Size(71, 13);
             this.LblPontuacao.TabIndex = 8;
-            this.LblPontuacao.Text = "LblPontuacao";
+            this.LblPontuacao.Text = "Pontuação: 0";
             // 
             // FrmQuiz1
             // 

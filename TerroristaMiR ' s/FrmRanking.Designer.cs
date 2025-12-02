@@ -38,7 +38,7 @@
             // 
             this.DgvRanking.AllowUserToAddRows = false;
             this.DgvRanking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRanking.Location = new System.Drawing.Point(352, 157);
+            this.DgvRanking.Location = new System.Drawing.Point(844, 437);
             this.DgvRanking.Name = "DgvRanking";
             this.DgvRanking.ReadOnly = true;
             this.DgvRanking.Size = new System.Drawing.Size(240, 150);
@@ -67,12 +67,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_12_02_1020271;
+            this.ClientSize = new System.Drawing.Size(1584, 821);
             this.Controls.Add(this.Fechar);
             this.Controls.Add(this.Atualizar);
             this.Controls.Add(this.DgvRanking);
             this.Name = "FrmRanking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRanking";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.DgvRanking)).EndInit();
             this.ResumeLayout(false);
 

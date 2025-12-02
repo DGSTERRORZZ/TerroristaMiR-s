@@ -10,6 +10,7 @@ namespace TerroristaMiR___s
 {
     public partial class FrmQuiz1 : Form
     {
+
         private int acertos = 0;
         string respostaSelecionada = "";
         private int tempoDecorrido = 0;
@@ -20,7 +21,8 @@ namespace TerroristaMiR___s
         int pontuacaoAtual = 0;
 
         // prontuário do usuário logado (vou explicar no final como enviar do login)
-        string prontuarioLogado;
+        public string prontuarioLogado;
+
         private void AtualizarPontuacaoNaTela(int pontos)
         {
             pontuacaoAtual += pontos;
@@ -119,6 +121,8 @@ namespace TerroristaMiR___s
             if (perguntaAtual >= perguntasDoDia.Count)
             {
                 MessageBox.Show("Você terminou o quiz de hoje!");
+                FrmRanking rank = new FrmRanking();
+                rank.Show();
                 this.Close();
             }
             else

@@ -86,8 +86,10 @@ namespace TerroristaMiR___s
                     {
                         TxbPro.Clear();
                         TxbSenha.Clear();
-                        FrmQuiz1 frmQuiz1 = new FrmQuiz1();
-                        frmQuiz1.ShowDialog();
+                        FrmQuiz1 quiz = new FrmQuiz1();
+                        quiz.prontuarioLogado = TxbPro.Text.Trim(); // <-- PASSA O PRONTUÁRIO
+                        quiz.Show();
+
                     }
                 }
                 else
