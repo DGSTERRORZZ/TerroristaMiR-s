@@ -43,6 +43,7 @@
             this.DgvRanking.ReadOnly = true;
             this.DgvRanking.Size = new System.Drawing.Size(240, 150);
             this.DgvRanking.TabIndex = 0;
+            this.DgvRanking.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvRanking_CellContentClick);
             // 
             // Atualizar
             // 

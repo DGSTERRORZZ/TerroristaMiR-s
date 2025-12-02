@@ -62,6 +62,7 @@
             this.TxbSenha.PasswordChar = '*';
             this.TxbSenha.Size = new System.Drawing.Size(490, 55);
             this.TxbSenha.TabIndex = 2;
+            this.TxbSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxbSenha_KeyPress);
             // 
             // TxbPro
             // 

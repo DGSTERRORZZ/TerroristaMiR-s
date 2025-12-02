@@ -41,6 +41,7 @@ namespace TerroristaMiR___s
             this.BtnProxima = new System.Windows.Forms.Button();
             this.timerPergunta = new System.Windows.Forms.Timer(this.components);
             this.BtnVerRanking = new System.Windows.Forms.Button();
+            this.LblPontuacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // RbA
@@ -177,12 +178,22 @@ namespace TerroristaMiR___s
             this.BtnVerRanking.Text = "Ver Ranking";
             this.BtnVerRanking.UseVisualStyleBackColor = false;
             // 
+            // LblPontuacao
+            // 
+            this.LblPontuacao.AutoSize = true;
+            this.LblPontuacao.Location = new System.Drawing.Point(530, 276);
+            this.LblPontuacao.Name = "LblPontuacao";
+            this.LblPontuacao.Size = new System.Drawing.Size(73, 13);
+            this.LblPontuacao.TabIndex = 8;
+            this.LblPontuacao.Text = "LblPontuacao";
+            // 
             // FrmQuiz1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TerroristaMiR___s.Properties.Resources.Captura_de_tela_2025_09_23_101028;
             this.ClientSize = new System.Drawing.Size(1858, 932);
+            this.Controls.Add(this.LblPontuacao);
             this.Controls.Add(this.BtnVerRanking);
             this.Controls.Add(this.BtnProxima);
             this.Controls.Add(this.LblPergunta);
@@ -216,5 +227,6 @@ namespace TerroristaMiR___s
         private System.Windows.Forms.Button BtnProxima;
         private Timer timerPergunta;
         private Button BtnVerRanking;
+        private Label LblPontuacao;
     }
 }

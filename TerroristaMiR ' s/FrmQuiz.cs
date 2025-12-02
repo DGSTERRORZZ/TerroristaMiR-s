@@ -9,11 +9,15 @@ namespace TerroristaMiR___s
     public partial class FrmQuiz : Form
     {
         private bool perguntasGeradas = false;
+        private bool Aceite = false;
         public FrmQuiz()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
         }
+
+
+        public bool BuscaAceite() {  return Aceite; }
 
         private void BtnSair_Click(object sender, EventArgs e)
         {
@@ -23,15 +27,13 @@ namespace TerroristaMiR___s
         private void BtnYes_Click(object sender, EventArgs e)
         {
             GerarQuestoesDoDia();
-
-            FrmQuiz1 frmQuiz1 = new FrmQuiz1();
-            frmQuiz1.ShowDialog();
+            Aceite = true;
+            this.Close();
         }
 
         private void BtnNo_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
-            frmLogin.ShowDialog();
+            this.Close();
         }
 
         private void FrmQuiz_Load(object sender, EventArgs e)

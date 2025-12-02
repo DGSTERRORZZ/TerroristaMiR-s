@@ -30,7 +30,7 @@ namespace TerroristaMiR___s
 
         private void CarregarRanking()
         {
-            string connStr = @"Server=.\SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
+            string connStr = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
             string query = @"
                 SELECT 
                     prontuario AS [Prontuário],
@@ -49,14 +49,29 @@ namespace TerroristaMiR___s
                     DgvRanking.DataSource = dt;
                 }
 
-                // Ajusta colunas
+                // Aparência
                 DgvRanking.Columns["Pontuação"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 DgvRanking.Columns["Pontuação"].DefaultCellStyle.Font = new Font("Press Start 2P", 10);
+
+                DgvRanking.Columns["Nome"].Width = 200;
+                DgvRanking.Columns["Prontuário"].Width = 120;
+                DgvRanking.Columns["Pontuação"].Width = 120;
+
+                DgvRanking.EnableHeadersVisualStyles = false;
+                DgvRanking.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                DgvRanking.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                DgvRanking.ColumnHeadersDefaultCellStyle.Font = new Font("Press Start 2P", 10);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao carregar ranking: " + ex.Message);
             }
         }
+
+        private void DgvRanking_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
+

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TerroristaMiR___s
@@ -15,13 +16,44 @@ namespace TerroristaMiR___s
         private List<Pergunta> perguntasDoDia = new List<Pergunta>();
         private int perguntaAtual = 0;
         private DateTime inicioPergunta;
+        // variáveis de pontuação
+        int pontuacaoAtual = 0;
+
+        // prontuário do usuário logado (vou explicar no final como enviar do login)
+        string prontuarioLogado;
+        private void AtualizarPontuacaoNaTela(int pontos)
+        {
+            pontuacaoAtual += pontos;
+            LblPontuacao.Text = "Pontuação: " + pontuacaoAtual;
+        }
+        private async void AnimarPontos(string texto)
+        {
+            Label anim = new Label();
+            anim.Text = texto;
+            anim.Font = new Font("Press Start 2P", 14);
+            anim.ForeColor = Color.Yellow;
+            anim.BackColor = Color.Transparent;
+            anim.AutoSize = true;
+
+            anim.Location = new Point(450, 300); // ajuste se quiser
+            this.Controls.Add(anim);
+            anim.BringToFront();
+
+            for (int i = 0; i < 20; i++)
+            {
+                anim.Top -= 2;
+                await Task.Delay(15);
+            }
+
+            this.Controls.Remove(anim);
+            anim.Dispose();
+        }
 
 
         public FrmQuiz1()
         {
             InitializeComponent();
         }
-
 
         private void CarregarQuestoesDoDia()
         {
@@ -83,41 +115,44 @@ namespace TerroristaMiR___s
 
         private void MostrarProximaPergunta()
         {
-            
-           
-
-            Pergunta pergunta = perguntasDoDia[perguntaAtual];
-
-            // Atualiza os textos na tela
-            LblPergunta.Text = pergunta.Texto;
-            RbA.Text = pergunta.A;
-            RbB.Text = pergunta.B;
-            RbC.Text = pergunta.C;
-            RbD.Text = pergunta.D;
-
-            // Limpa seleção anterior
-            RbA.Checked = false;
-            RbB.Checked = false;
-            RbC.Checked = false;
-            RbD.Checked = false;
-
-            // Reseta o tempo de resposta
-            inicioPergunta = DateTime.Now;
-            tempoDecorrido = 0;
-            LblTempo.Text = "Tempo: 00:00";
-            timerPergunta.Start();
-            perguntaAtual++;
-        }
-
-
-        private void BtnProxima_Click(object sender, EventArgs e)
-        {
 
             if (perguntaAtual >= perguntasDoDia.Count)
             {
                 MessageBox.Show("Você terminou o quiz de hoje!");
                 this.Close();
             }
+            else
+            {
+
+                Pergunta pergunta = perguntasDoDia[perguntaAtual];
+
+                // Atualiza os textos na tela
+                LblPergunta.Text = pergunta.Texto;
+                RbA.Text = pergunta.A;
+                RbB.Text = pergunta.B;
+                RbC.Text = pergunta.C;
+                RbD.Text = pergunta.D;
+
+                // Limpa seleção anterior
+                RbA.Checked = false;
+                RbB.Checked = false;
+                RbC.Checked = false;
+                RbD.Checked = false;
+
+                // Reseta o tempo de resposta
+                inicioPergunta = DateTime.Now;
+                tempoDecorrido = 0;
+                LblTempo.Text = "Tempo: 00:00";
+                timerPergunta.Start();
+                //perguntaAtual++;
+            }
+        }
+
+
+        private void BtnProxima_Click(object sender, EventArgs e)
+        {
+
+
             timerPergunta.Stop();
             // calcula tempo
             TimeSpan tempo = DateTime.Now - inicioPergunta;
@@ -136,7 +171,7 @@ namespace TerroristaMiR___s
             }
 
             // pega a pergunta atual
-            Pergunta p = perguntasDoDia[perguntaAtual];
+            Pergunta p = perguntasDoDia[perguntaAtual++];
             // chama o método com os tipos corretos: (string, Pergunta, string, int)
             RegistrarResposta(UsuarioLogado.IdUsuario, p, respostaSelecionada, tempoSegundos);
             // avança
@@ -161,6 +196,18 @@ namespace TerroristaMiR___s
 
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
+                        if (respostaSelecionada == p.Correta)
+                        {
+                            MessageBox.Show("Correto!");
+                            AtualizarPontuacaoNoBanco(100);
+                            AtualizarPontuacaoNaTela(100);
+                            AnimarPontos("+100");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Errado!");
+                        }
+
                         bool acertou = (respostaSelecionada == p.Correta);
 
                         cmd.Parameters.AddWithValue("@IdUsuario", prontuario);
@@ -173,6 +220,7 @@ namespace TerroristaMiR___s
                         // 2️⃣ Se acertou, soma 100 pontos
                         if (acertou)
                         {
+
                             MessageBox.Show("Parabéns você acertou a alternativa correta ");
                             string updatePontuacao = @"
                                UPDATE Usuarios
@@ -183,7 +231,9 @@ namespace TerroristaMiR___s
                             {
                                 cmdPontuacao.Parameters.AddWithValue("@IdUsuario", prontuario);
                                 cmdPontuacao.ExecuteNonQuery();
+
                             }
+
                         }
                         else
                         {
@@ -257,8 +307,8 @@ namespace TerroristaMiR___s
                 RbC.BackColor = Color.White;
             }
         }
-    
-     private void RbD_CheckedChanged(object sender, EventArgs e)
+
+        private void RbD_CheckedChanged(object sender, EventArgs e)
         {
             if (RbD.BackColor == Color.White && RbD.Checked == true)
                 RbD.BackColor = Color.Yellow;
@@ -267,7 +317,32 @@ namespace TerroristaMiR___s
                 RbD.BackColor = Color.White;
             }
         }
+    
+    private void AtualizarPontuacaoNoBanco(int pontos)
+        {
+            string connStr = @"Server=SQLEXPRESS;Database=CJ3027678PR2;User Id=aluno;Password=aluno;";
+            string query = "UPDATE Usuarios SET pontuacao = pontuacao + @pontos WHERE prontuario = @prontuario";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connStr))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@pontos", pontos);
+                    cmd.Parameters.AddWithValue("@prontuario", prontuarioLogado);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao atualizar pontuação: " + ex.Message);
+            }
+        }
     }
+}
+
 
     public class Pergunta
     {
@@ -284,5 +359,5 @@ namespace TerroristaMiR___s
     {
         public static string IdUsuario { get; set; }
     }
-}
+
 

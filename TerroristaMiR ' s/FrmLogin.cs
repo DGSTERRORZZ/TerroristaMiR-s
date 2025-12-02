@@ -63,19 +63,9 @@ namespace TerroristaMiR___s
 
         private void BtnEnt_Click_1(object sender, EventArgs e)
         {
+            
             string prontuario = TxbPro.Text.Trim();
             string senha = TxbSenha.Text.Trim();
-            if (ValidarLogin(prontuario, senha))
-            {
-                UsuarioLogado.IdUsuario = prontuario;
-                IsLoggedIn = true;
-                FrmQuiz frmQuiz = new FrmQuiz();
-                frmQuiz.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Prontuário ou senha inválidos.");
-            }
             if (TxbPro.Text.Trim() == "ADMIN" && TxbSenha.Text.Trim() == "1234")
             {
                 FrmAdmin admin = new FrmAdmin();
@@ -84,6 +74,28 @@ namespace TerroristaMiR___s
                 this.Show();
                 return;
             }
+            else
+            {
+                if (ValidarLogin(prontuario, senha))
+                {
+                    UsuarioLogado.IdUsuario = prontuario;
+                    IsLoggedIn = true;
+                    FrmQuiz frmQuiz = new FrmQuiz();
+                    frmQuiz.ShowDialog();
+                    if (frmQuiz.BuscaAceite())
+                    {
+                        TxbPro.Clear();
+                        TxbSenha.Clear();
+                        FrmQuiz1 frmQuiz1 = new FrmQuiz1();
+                        frmQuiz1.ShowDialog();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Prontuário ou senha inválidos.");
+                }
+            }
+           
         }
 
         private void TxbPro_TextChanged(object sender, EventArgs e)
@@ -93,6 +105,13 @@ namespace TerroristaMiR___s
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void TxbSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                BtnEnt_Click_1(null, null);
 
         }
     }
